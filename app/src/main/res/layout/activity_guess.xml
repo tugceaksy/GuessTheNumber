@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuessActivity">
+
+    <TextView
+        android:id="@+id/lastChancetextView"
+        android:layout_width="241dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="380dp"
+        android:text="LAST CHANCE : 5"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textColorHighlight="#D69090"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guessbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/increasetextView"
+        android:layout_width="109dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="460dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastChancetextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/numberinEdittext"
+        android:layout_width="222dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="301dp"
+        android:ems="10"
+        android:hint="GIVE ME A NUMBER"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastChancetextView"
+        app:layout_constraintVertical_bias="0.972" />
+
+    <Button
+        android:id="@+id/guessbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="146dp"
+        android:text="GUESS IT!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastChancetextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
